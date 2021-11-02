@@ -1,0 +1,12 @@
+nav {
+	position: sticky;
+	top: 0;
+
+	background-color: #2a2e35;
+	padding: 1.5% 0;
+	box-shadow: 0 1px 6px #000000;
+}
+
+nav h1 {
+	margin: 0;
+}

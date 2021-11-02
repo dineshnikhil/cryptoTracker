@@ -1,0 +1,63 @@
+.card-head {
+	width: 80%;
+	margin: 0 auto;
+	padding: 2% 3%;
+	color: #fefeff;
+
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+
+	border: 1px solid #b3becc;
+}
+
+.card-head p {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin: 0;
+	width: 15%;
+
+	text-align: right;
+
+	border-left: 1px solid #b3becc;
+}
+
+#rank {
+	border: none;
+	width: 5% !important;
+	text-align: left;
+}
+
+.coin-search {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+
+	margin: 2% 0;
+}
+
+.coin-search form {
+	width: 30%;
+}
+
+.coin-search form .fas {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-right: 2%;
+}
+
+.coin-search form input {
+	background-color: transparent;
+	border: none;
+	width: 80%;
+	margin-top: 3%;
+	color: #fefeff;
+
+	font-size: 1.2rem;
+	padding: 1% 2.5%;
+	border-bottom: 1.5px solid #b3becc;
+}
+
+.coin-search form input:focus {
+	outline: none;
+}

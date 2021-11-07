@@ -2,13 +2,13 @@
 	width: 80%;
 	margin: 0 auto;
 	padding: 2% 3%;
-	color: #fefeff;
+	color: var(--heading-color);
 
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 
-	border: 1px solid #b3becc;
+	border: 1px solid var(--font-color);
 }
 
 .card-head p {
@@ -19,7 +19,7 @@
 
 	text-align: right;
 
-	border-left: 1px solid #b3becc;
+	border-left: 1px solid var(--font-color);
 }
 
 #rank {
@@ -51,11 +51,11 @@
 	border: none;
 	width: 80%;
 	margin-top: 3%;
-	color: #fefeff;
+	color: var(--heading-color);
 
 	font-size: 1.2rem;
 	padding: 1% 2.5%;
-	border-bottom: 1.5px solid #b3becc;
+	border-bottom: 1.5px solid var(--font-color);
 }
 
 .coin-search form input:focus {

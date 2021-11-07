@@ -6,6 +6,7 @@ function Home() {
 
     const [coins, setCoins] = useState([]);
     const [search, setSearch] = useState("");
+    const [isLoading, setIsLoading] = useState(true);
 
     // Search change handler.
     const searchChangeHandler = e => {
@@ -17,7 +18,8 @@ function Home() {
         fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=100&page=1&sparkline=false").then(response => {
             return response.json();
         }).then(data => {
-            setCoins(data)
+            setCoins(data);
+            setIsLoading(false);
         })
     }, [])
 
@@ -44,6 +46,7 @@ function Home() {
                 <p>Mkt Cap</p>
             </div>
             <div>
+                {isLoading && <p>Loading...</p>}
                 {filteredCoins.map((data) => {
                     return <Card key={data.id} data={data} />
                 })}

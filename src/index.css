@@ -6,8 +6,24 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #12191a;
-	color: #b3becc;
+	background-color: var(--bg-color);
+	color: var(--font-color);
+}
+
+:root {
+	--bg-color: #dbe1e8;
+	--secoudary-color: #ffffff;
+	--font-color: #454f57;
+	--heading-color: #13191b;
+	--hover-color: #dbe1e8;
+}
+
+[data-theme='dark'] {
+	--bg-color: #13191b;
+	--secoudary-color: #2a2f34;
+	--font-color: #b3bfcd;
+	--heading-color: #ffffff;
+	--hover-color: #0d1011;
 }
 
 code {
